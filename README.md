@@ -1,4 +1,5 @@
 # Face-detection
- This is a personal project please don't mind.
+ Its a simple project in which using Haar-cascade frontal face detection algorithm the face is recoginzed and marked in the given video uploaded
+
  
  
