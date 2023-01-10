@@ -4,13 +4,13 @@ from tensorflow.keras.preprocessing.image import load_img, img_to_array
 #from keros.preprocessing. image import load_img, img_to_array
 import numpy as np
 
-model=load_model('saved_model-220321-141612.h5')
+model=load_model('Pretrained model.h5')
 
 img_width, img_height= 150,150
 
 face_cascade=cv2.CascadeClassifier('haarcascade_frontalface_default3-220321-141546.xml')
 
-#cap=cv2.VideoCapture('video1-220321-152928')
+#cap=cv2.VideoCapture('ANY VIDEO TO BE PROCESSED')
 cap=cv2.VideoCapture(0)
 img_count_full=0
 
