@@ -31,13 +31,11 @@
 - Feel free to Experiment with the Source Code and find what works best for you.
 
 ## Here is a Preview 
-![final](https://user-images.githubusercontent.com/119479391/216778973-5f804a83-a9a1-4d17-953a-ea9c9182cee2.png)
+<p align="center">
+  <img width="315" height="345" src="https://user-images.githubusercontent.com/119479391/216778973-5f804a83-a9a1-4d17-953a-ea9c9182cee2.png">
+</p>  
 
+**NOTE:** You can also use a ***Video*** and get the result insted of ***Web-cam***, but relying on ***Web-Cam*** method is recommended because you should have to follow additional steps which include changing the path of the video to be processed to make it working.
 
 ## Contributors
 - [Puneeth Y @puneeth072003](https://github.com/puneeth072003)
-
-
-
- 
- 
