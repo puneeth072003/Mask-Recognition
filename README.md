@@ -16,7 +16,7 @@
  ## **Prequisites**
 
 - Firstly download any **IDE** to run the code.
-- Download [**Pre-trained model**](/Prerequisite/Model.h5) available on the internet and [**haarcascade_frontalface.xml**](/Prerequisite/haarcascade_frontalface.xml) files from above folder in the repository to your the local desktop.
+- Download [**Pre-trained model**](/Prerequisite/Model.h5) and [**haarcascade_frontalface.xml**](/Prerequisite/haarcascade_frontalface.xml) both files from **Prerequsite folder** in the repository to your the local machine.
 - Download all the modules required to run the code which are mentioned below.
     - **Tensorflow** *which can be downloded by running below command in the terminal.*
         ```python 
