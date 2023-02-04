@@ -1,5 +1,5 @@
 # **Mask-recognition**
- Its a simple project in which using Haar-cascade frontal face detection algorithm, the face is recoginzed and marked in the given video uploaded or captured via web cam and tells whether the person is wearing mask or not.
+ Its a simple project in which using **Haar-cascade frontal face detection** algorithm, the face is recoginzed and marked in the given video uploaded or captured via web cam and tells whether the person is wearing mask or not.
  
    
  ![Facemask-Detection-Blog](https://user-images.githubusercontent.com/119479391/211579312-520bf0bb-80a2-4b0b-bdc8-079149fd42a5.jpg)
