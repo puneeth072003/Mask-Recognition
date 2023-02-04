@@ -37,5 +37,13 @@
 
 **NOTE:** You can also use a ***Video*** and get the result insted of ***Web-cam***, but relying on ***Web-Cam*** method is recommended because you should have to follow additional steps which include changing the path of the video to be processed to make it working.
 
+## How can you Contribute?
+- Feel free to fork the project and try to understand how it works.
+- If you find any **queries** feel free to raise a new issue.
+
+## Feedback
+- You can encourage me by giving ⭐**Stars** on the project.
+- I would be of great help if you 🚀**Sponsor** me.
+
 ## Contributors
 - [Puneeth Y @puneeth072003](https://github.com/puneeth072003)
