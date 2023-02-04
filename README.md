@@ -1,4 +1,4 @@
-# **Mask-recognition**😷  
+# **Mask-recognition**  
 ### **Table of Contents**  
 -   [About Project](#project-mask-recognition)
 -   [Prequisites](#prequisites)
@@ -51,8 +51,8 @@
 - If you find any **queries** feel free to raise a new issue.
 
 ## Feedback
-- You can encourage me by giving ⭐**Stars** on the project.
-- I would be of great help if you 🚀**Sponsor** me.
+- You can encourage me by giving ⭐ **Stars** on the project.
+- I would be of great help if you 🚀 **Sponsor** me.
 
 ## Contributors
 - [Puneeth Y @puneeth072003](https://github.com/puneeth072003)
