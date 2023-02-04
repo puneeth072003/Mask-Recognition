@@ -1,3 +1,11 @@
+### **Table of Contents**  
+-   [About Project](#mask-recognition)
+-   [Prequisites](#prequisites)
+-   [Output Preview](#here-is-a-preview)
+-   [How to Contribute to the Project](#how-to-contribute-to-the-project)
+-   [Feedback](#feedback)
+-   [Contributors](#contributors)
+
 # **Mask-recognition**
  Its a simple project in which using **Haar-cascade frontal face detection** algorithm, the face is recoginzed and marked in the given video uploaded or captured via web cam and tells whether the person is wearing mask or not.
  
@@ -37,7 +45,7 @@
 
 **NOTE:** You can also use a ***Video*** and get the result insted of ***Web-cam***, but relying on ***Web-Cam*** method is recommended because you should have to follow additional steps which include changing the path of the video to be processed to make it working.
 
-## How can you Contribute?
+## How to contribute to the project
 - Feel free to fork the project and try to understand how it works.
 - If you find any **queries** feel free to raise a new issue.
 
