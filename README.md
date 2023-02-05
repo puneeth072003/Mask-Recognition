@@ -38,33 +38,31 @@
         ```python 
             pip install keras
         ```
-- Copy the **Source code** from the above src folder and paste it in the IDE and this project can be run in **2 ways** which are mentioned below.    
-  - **Method 1 :** Directly by capturing the video via ***Web-cam***       
-        In order to do so you have to **remove** the below mentioned line of code from the source code copied.  
-       ```python 
-            cap=cv2.VideoCapture('C:\\Users\\Puneeth\\Desktop\sample.mp4')
-       ```
-  - **Method 2 :** Acessing the video in your machine.    
+- Copy the **Source code** from the above src folder and paste it in the IDE and this project can be run in **2 ways** which are mentioned below.  
+    - **Method 1:** Acessing the video in your machine.    
        For this method you have to **remove** the below mentioned line of code from the source code copied and add **absolute path** of the video in this `cap=cv2.VideoCapture('C:\\Users\\Puneeth\\Desktop\sample.mp4')` section.  
        
        ```python 
            cap=cv2.VideoCapture(0)
+       ```    
+  - **Method 2:** Directly by capturing the video via ***Web-cam***       
+        In order to do so you have to **remove** the below mentioned line of code from the source code copied.  
+       ```python 
+            cap=cv2.VideoCapture('C:\\Users\\Puneeth\\Desktop\sample.mp4')
        ```
+
 - After making the above changes run the code as usual.
 - There you have it a working project in your local desktop.
 - Feel free to Experiment with the Code and find what works best for you.
 
-## Here is a Preview 
-- **Method 1: Output preview:**  
+## Here is a Preview  
+ - **Method 1: Output preview:**  
+   ![output](https://user-images.githubusercontent.com/119479391/216803808-f4669f71-38f0-4bec-9a2d-61fd5de3991a.png)  
+   
+- **Method 2: Output preview:**  
    ![final](https://user-images.githubusercontent.com/119479391/216803822-30964f99-5c4e-46a6-8e7b-1bf88ba693b1.png)
 
-   
-  
- - **Method 2: Output preview:**  
-   ![output](https://user-images.githubusercontent.com/119479391/216803808-f4669f71-38f0-4bec-9a2d-61fd5de3991a.png)
-
-
-**NOTE:** You can also use a ***Video*** and get the result insted of ***Web-cam***, but relying on ***Web-Cam*** method is recommended because you should have to follow additional steps which include changing the path of the video to be processed to make it working.
+**NOTE:** A separate window will pop up showing the output video sometimes it will run in background of the IDE insted of popping up so please monitor the changes when you run the program.
 
 ## How to contribute to the project
 - Feel free to fork the project and try to understand how it works.
