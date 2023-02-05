@@ -9,7 +9,7 @@ img_width, img_height= 150,150  # these are the default values to be set
 
 face_cascade=cv2.CascadeClassifier('C:\\Users\\Puneeth\\Desktop\Mask-Recognition\Prerequisite\haarcascade_frontalface.xml')  # this allows us to use the downloded algorithm
 
-cap=cv2.VideoCapture('C:\\Users\\Puneeth\\Desktop\sampleed.mp4')   # Please paste the absolute path of your video inside parenthesis
+cap=cv2.VideoCapture('C:\\Users\\Puneeth\\Desktop\sample.mp4')   # Please paste the absolute path of your video inside parenthesis
 #cap=cv2.VideoCapture(0)           # Uncomment this if you have to use your web-cam to capture video
 img_count_full=0    # declaring a counting variable
  
