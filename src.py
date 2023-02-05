@@ -3,13 +3,13 @@ from tensorflow.keras.models import load_model   # This module facilitates us to
 from tensorflow.keras.preprocessing.image import load_img , img_to_array   # this module helps in convertion of image to array
 import numpy as np   # this module helps with expand the array
 
-model=load_model('C:\\Users\\Shamanth\\Desktop\Mask-Recognition\Prerequisite\Model.h5')    # this allows us to load the pretrained model
+model=load_model('C:\\Users\\Puneeth\\Desktop\Mask-Recognition\Prerequisite\Model.h5')    # this allows us to load the pretrained model
 
 img_width, img_height= 150,150  # these are the default values to be set
 
-face_cascade=cv2.CascadeClassifier('C:\\Users\\Shamanth\\Desktop\Mask-Recognition\Prerequisite\haarcascade_frontalface.xml')  # this allows us to use the downloded algorithm
+face_cascade=cv2.CascadeClassifier('C:\\Users\\Puneeth\\Desktop\Mask-Recognition\Prerequisite\haarcascade_frontalface.xml')  # this allows us to use the downloded algorithm
 
-cap=cv2.VideoCapture('C:\\Users\\Shamanth\\Desktop\sampleed.mp4')   # Please paste the absolute path of your video inside parenthesis
+cap=cv2.VideoCapture('C:\\Users\\Puneeth\\Desktop\sampleed.mp4')   # Please paste the absolute path of your video inside parenthesis
 #cap=cv2.VideoCapture(0)           # Uncomment this if you have to use your web-cam to capture video
 img_count_full=0    # declaring a counting variable
  
