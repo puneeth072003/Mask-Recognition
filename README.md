@@ -17,6 +17,9 @@
 
 - Firstly download any **IDE** to run the code.
 - Download [**Pre-trained model**](/Prerequisite/Model.h5) and [**haarcascade_frontalface.xml**](/Prerequisite/haarcascade_frontalface.xml) both files from **Prerequsite folder** in the repository to your the local machine.
+
+- Copy the absolute paths of the downloaded and paste it in `model=load_model('C:\\Users\\Puneeth\\Desktop\Mask-Recognition\Prerequisite\Model.h5')` and `face_cascade=cv2.CascadeClassifier('C:\\Users\\Puneeth\\Desktop\Mask-Recognition\Prerequisite\haarcascade_frontalface.xml')` sections.
+
 - Download all the modules required to run the code which are mentioned below.
     - **Tensorflow** *which can be downloded by running below command in the terminal.*
         ```python 
@@ -35,14 +38,31 @@
         ```python 
             pip install keras
         ```
-- Copy the **Source code** from the above src folder and run in it in the IDE.
+- Copy the **Source code** from the above src folder and paste it in the IDE and this project can be run in **2 ways** which are mentioned below.    
+  - **Method 1 :** Directly by capturing the video via ***Web-cam***       
+        In order to do so you have to **remove** the below mentioned line of code from the source code copied.  
+       ```python 
+            cap=cv2.VideoCapture('C:\\Users\\Puneeth\\Desktop\sample.mp4')
+       ```
+  - **Method 2 :** Acessing the video in your machine.    
+       For this method you have to **remove** the below mentioned line of code from the source code copied and add **absolute path** of the video in this `cap=cv2.VideoCapture('C:\\Users\\Puneeth\\Desktop\sample.mp4')` section.  
+       
+       ```python 
+           cap=cv2.VideoCapture(0)
+       ```
+- After making the above changes run the code as usual.
 - There you have it a working project in your local desktop.
-- Feel free to Experiment with the Source Code and find what works best for you.
+- Feel free to Experiment with the Code and find what works best for you.
 
 ## Here is a Preview 
-<p align="center">
-  <img width="315" height="345" src="https://user-images.githubusercontent.com/119479391/216778973-5f804a83-a9a1-4d17-953a-ea9c9182cee2.png">
-</p>  
+- **Method 1: Output preview:**  
+   ![final](https://user-images.githubusercontent.com/119479391/216803822-30964f99-5c4e-46a6-8e7b-1bf88ba693b1.png)
+
+   
+  
+ - **Method 2: Output preview:**  
+   ![output](https://user-images.githubusercontent.com/119479391/216803808-f4669f71-38f0-4bec-9a2d-61fd5de3991a.png)
+
 
 **NOTE:** You can also use a ***Video*** and get the result insted of ***Web-cam***, but relying on ***Web-Cam*** method is recommended because you should have to follow additional steps which include changing the path of the video to be processed to make it working.
 
