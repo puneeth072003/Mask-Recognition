@@ -41,7 +41,7 @@
         ```python 
             pip install keras
         ```
-- Copy the **Source code** from the above src folder and paste it in the IDE and this project can be run in **2 ways** which are mentioned below.  
+- Copy the [***Source code***](/src.py) from the above src folder and paste it in the IDE and this project can be run in **2 ways** which are mentioned below.  
     - **Method 1:** Acessing the video in your machine.    
        For this method you have to **remove** the below mentioned line of code from the source code copied and add **absolute path** of the video in this `cap=cv2.VideoCapture('C:\\Users\\Puneeth\\Desktop\sample.mp4')` section.  
        
@@ -59,8 +59,27 @@
 - Feel free to Experiment with the Code and find what works best for you.
 
 ## How to train your own model
-- Content on the way
+- **Step 1:** Please download and upload the [***DataSets.zip***](/train_model/DataSets.zip) from our repository to your **Google Drive** required to train your model.      
+[*Click here to get a direct G-Drive link*](https://drive.google.com/file/d/16PKeI2RIz_r-JTqbDm6hfWQ-he7Kk8rV/view?usp=sharing)  
+**Note:** You can use other data sets insted of this one but please note that the more you train your model more accurate will be its predictions.
 
+- **Step 2:** Further go ahead and open your [**Google Colaboratory**] (https://colab.research.google.com/) and create a new note book.
+
+- **Step 3:** Import these modules given below.
+    ```python 
+            from tensorflow.keras.models import Sequential
+            from tensorflow.keras.layers import Conv2D, MaxPooling2D, Dropout, Flatten, Dense
+            from tensorflow.keras.optimizers import Adam
+            from tensorflow.keras.preprocessing.image import ImageDataGenerator
+            import numpy as np
+            import  matplotlib.pyplot as plt
+    ```  
+- **Step 4:** Import google drive from google.colab and mount it by using the following command.  
+```python 
+     from google.colab import drive          .
+     drive.mount('/content/drive/')  
+```
+    
 ## Here is a Preview  
  - **Method 1: Output preview:**  
    ![output](https://user-images.githubusercontent.com/119479391/216803808-f4669f71-38f0-4bec-9a2d-61fd5de3991a.png)  
