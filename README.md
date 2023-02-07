@@ -67,18 +67,18 @@
 
 - **Step 3:** Import these modules given below.
     ```python 
-            from tensorflow.keras.models import Sequential
-            from tensorflow.keras.layers import Conv2D, MaxPooling2D, Dropout, Flatten, Dense
-            from tensorflow.keras.optimizers import Adam
-            from tensorflow.keras.preprocessing.image import ImageDataGenerator
-            import numpy as np
-            import  matplotlib.pyplot as plt
+       from tensorflow.keras.models import Sequential
+       from tensorflow.keras.layers import Conv2D, MaxPooling2D, Dropout, Flatten, Dense
+       from tensorflow.keras.optimizers import Adam
+       from tensorflow.keras.preprocessing.image import ImageDataGenerator
+       import numpy as np
+       import matplotlib.pyplot as plt     
     ```  
 - **Step 4:** Import google drive from google.colab and mount it by using the following command.  
-```python 
-     from google.colab import drive          .
-     drive.mount('/content/drive/')  
-```
+  ```python 
+       from google.colab import drive          .
+       drive.mount('/content/drive/')  
+  ```
     
 ## Here is a Preview  
  - **Method 1: Output preview:**  
