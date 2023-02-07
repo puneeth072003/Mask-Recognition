@@ -58,6 +58,9 @@
 - There you have it a working project in your local desktop.
 - Feel free to Experiment with the Code and find what works best for you.
 
+## How to train your own model
+- Content on the way
+
 ## Here is a Preview  
  - **Method 1: Output preview:**  
    ![output](https://user-images.githubusercontent.com/119479391/216803808-f4669f71-38f0-4bec-9a2d-61fd5de3991a.png)  
