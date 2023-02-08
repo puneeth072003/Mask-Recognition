@@ -94,7 +94,7 @@
      train_mask_dir=os.path.join(train_dir, 'Mask')       
      train_nomask_dir=os.path.join(train_dir, 'Non Mask')
   ```
-- **Step 7:** Unify all images in the data set by providing set of rules by rescaling, zoom-range
+- **Step 7:** Make all images similar in the data set by providing set of rules like rescaling, zoom-range and rotation range 
   ```python
      train_datagen=ImageDataGenerator(rescale=1./255,
                                  zoom_range = 0.2,
@@ -119,6 +119,25 @@
                                   batch_size=32,
                                   class_mode='binary'
                                   )
+  ```
+  - **Step 8:** 
+  ```python
+  model = Sequential() # we need this model to image conversions
+
+  model.add(Conv2D(32,(3,3),padding='SAME',activation='relu', input_shape=(150,150,3))) # 
+  model.add(MaxPooling2D(pool_size=(2,2)))
+  model.add(Dropout (0.5))
+
+  model.add(Conv2D(64, (3,3),padding='SAME', activation='relu'))
+  model.add(MaxPooling2D(pool_size=(2,2))) 
+  model.add(Dropout (0.5))
+
+  model.add(Flatten())
+
+  model.add(Dense(256, activation='relu')) 
+  model.add(Dropout (0.5)) 
+  model.add(Dense(1,activation='sigmoid')) 
+  model.summary()
   ```
     
 ## Here is a Preview  
