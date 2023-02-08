@@ -75,9 +75,50 @@
        import matplotlib.pyplot as plt     
     ```  
 - **Step 4:** Import google drive from google.colab and mount it by using the following command.  
-  ```python 
-       from google.colab import drive          .
-       drive.mount('/content/drive/')  
+   ```python 
+      from google.colab import drive          
+      drive.mount('/content/drive/')   # Alteration to be made here
+   ```
+- **Step 5:** Unzip the downloaded zip file.
+  **Note:** Please to paste paths where you have uploaded the zip file in your drive have to be pasted below parenthesis.
+  ```python
+     !unzip -uq "/content/drive/MyDrive/project/face mask/archive" -d "/content/drive/MyDrive/project/face mask/archive"   # Alteration to be made here
+  ```
+- **Step 6:** Please assign the directories to specific variables
+  ```python
+     import os   # facilates working with paths and directories
+     main_dir="/content/drive/MyDrive/project/face mask/archive/New Masks Dataset"   # Alteration to be made here
+     train_dir=os.path.join(main_dir,'Train')    
+     test_dir=os.path.join(main_dir,'Test')
+     valid_dir=os.path.join(main_dir,'Validation')
+     train_mask_dir=os.path.join(train_dir, 'Mask')       
+     train_nomask_dir=os.path.join(train_dir, 'Non Mask')
+  ```
+- **Step 7:** Unify all images in the data set by providing set of rules by rescaling, zoom-range
+  ```python
+     train_datagen=ImageDataGenerator(rescale=1./255,
+                                 zoom_range = 0.2,
+                                 rotation_range = 40,
+                                 horizontal_flip = True
+                                 )             
+     test_datagen=ImageDataGenerator(rescale=1./255)
+     valid_datagen=ImageDataGenerator(rescale=1./255) 
+
+     train_generator = train_datagen.flow_from_directory(train_dir,
+                                                         target_size=(150,150),
+                                                         batch_size=32,
+                                                         class_mode='binary'
+                                                       ) 
+     test_generator = test_datagen.flow_from_directory(test_dir,
+                                                   target_size=(150,150),
+                                                   batch_size=32,       
+                                                   class_mode='binary'
+                                                 )
+     valid_generator = valid_datagen.flow_from_directory(valid_dir,
+                                  target_size=(150,150),
+                                  batch_size=32,
+                                  class_mode='binary'
+                                  )
   ```
     
 ## Here is a Preview  
