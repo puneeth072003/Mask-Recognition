@@ -59,7 +59,7 @@
 - Feel free to Experiment with the Code and find what works best for you.
 
 ## How to train your own model
-- **Step 1:** Please **download** and upload the [***DataSets.zip***](/train_model/DataSets.zip) required to train your model from our repository to your **Google Drive**.
+- **Step 1:** Please **download** and upload the [***DataSets.zip***](/train_model/DataSets.zip) from our repository to your **Google Drive** which is required to train your model.
 [*Click here to get a direct G-Drive link*](https://drive.google.com/file/d/16PKeI2RIz_r-JTqbDm6hfWQ-he7Kk8rV/view?usp=sharing)    
 **Note:** You can use other data sets insted of this one but please note that the more you train your model more accurate will be its predictions.
 
