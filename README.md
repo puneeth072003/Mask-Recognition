@@ -59,11 +59,11 @@
 - Feel free to Experiment with the Code and find what works best for you.
 
 ## How to train your own model
-- **Step 1:** Please download and upload the [***DataSets.zip***](/train_model/DataSets.zip) from our repository to your **Google Drive** required to train your model.      
+- **Step 1:** Please download and upload the [***DataSets.zip***](/train_model/DataSets.zip) from our repository to your **Google Drive** required to train your model.
 [*Click here to get a direct G-Drive link*](https://drive.google.com/file/d/16PKeI2RIz_r-JTqbDm6hfWQ-he7Kk8rV/view?usp=sharing)  
 **Note:** You can use other data sets insted of this one but please note that the more you train your model more accurate will be its predictions.
 
-- **Step 2:** Further go ahead and open your [**Google Colaboratory**] (https://colab.research.google.com/) and create a new note book.
+- **Step 2:** Further go ahead and open your [**Google Colaboratory**](https://colab.research.google.com/) and create a new note book.
 
 - **Step 3:** Import these modules given below.
     ```python 
@@ -139,6 +139,49 @@
   model.add(Dense(1,activation='sigmoid')) 
   model.summary()
   ```
+  
+ - **Step 9:**
+ ```python
+ model.compile(Adam(lr=0.001),loss='binary_crossentropy',metrics=['accuracy']) 
+ ```
+ 
+ - **Step 10:**
+ ```python
+ history = model.fit(train_generator, # we are comparing this processed set of data to the validation data set
+ epochs = 30, # epoches means periods or sessions
+ validation_data= valid_generator) # basically it is where the model is trained to identify masked faces
+ ```
+ 
+ - **Step 11:**
+ ```python
+ test_loss, test_acc = model.evaluate(test_generator)
+ print('test aac :{} test loss:{}'.format(test_acc,test_loss))
+ ```
+ 
+ - **Step 12:**
+ ```python
+ import numpy as np 
+ from google.colab import files 
+ import keras.utils as image
+
+ uploaded=files.upload()    # in order upload the file
+ #print (uploaded)
+ for f in uploaded.keys():
+     img_path= '/content/'+f  # for every image, image path will be saved as img_path
+     img = image.load_img(img_path, target_size=(150,150)) 
+     images=image.img_to_array(img) # this is used to convert into a numpy array
+     images=np.expand_dims(images,axis=0) # 
+     prediction=model.predict(images)
+     if prediction==0:
+         print(f, 'mask is present')
+     else:
+         print(f,' no mask is present')
+ ```
+ - **Step 13:** 
+ ```python
+ model.save('latestmodel.h5')
+ ```
+ - **Step 14:** 
     
 ## Here is a Preview  
  - **Method 1: Output preview:**  
