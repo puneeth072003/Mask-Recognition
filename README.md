@@ -17,7 +17,7 @@
  ## **Prequisites**
 
 - Firstly download any **IDE** to run the code.
-- Download [**Pre-trained model**](/Prerequisite/Model.h5) and [**haarcascade_frontalface.xml**](/Prerequisite/haarcascade_frontalface.xml) both files from our repository to your the local machine.  
+- Download [**Pre-trained model**](/Prerequisite/Model.h5) and [**haarcascade_frontalface.xml**](https://drive.google.com/file/d/18q7pSVYuk_nnuOxX7TVqJUojeCtcjjkf/view?usp=sharing) both files from our repository to your the local machine.  
 **Note:** [Click here](https://github.com/puneeth072003/Mask-Recognition/tree/model#how-to-train-your-own-model) if you want to try build your own model insted of using a pre-trained one.
 
 - Copy the absolute paths of the downloaded prerequsite files and paste it in `model=load_model('C:\\Users\\Puneeth\\Desktop\Mask-Recognition\Prerequisite\Model.h5')` and `face_cascade=cv2.CascadeClassifier('C:\\Users\\Puneeth\\Desktop\Mask-Recognition\Prerequisite\haarcascade_frontalface.xml')` sections.  
